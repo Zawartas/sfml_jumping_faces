@@ -49,6 +49,7 @@ void c_gra_gameplay::ruszStasiem(sf::Texture texture, sf::Sprite& sprite, sf::Ve
     sf::Vector2u rozmiar_okna = okno_gry_STAS.getRozmiarOkna_2u();
     sf::Vector2u rozmiar_obrazka = texture.getSize();
 
+    sprite.rotate(1);
     if ((sprite.getPosition().x >
     rozmiar_okna.x - rozmiar_obrazka.x && incr.x > 0) ||
     (sprite.getPosition().x < 0 && incr.x< 0)){
